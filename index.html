@@ -3,68 +3,154 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="一起加入音樂巡演，查看巡演場次與演出資訊。">
-  <title>巡迴現場｜音樂巡演</title>
+  <meta name="description" content="認識 Silverhawk，聽聽新曲，查看 2026 台灣巡演場次。">
+  <meta name="theme-color" content="#08090d">
+  <title>Silverhawk — 讓音樂，帶我們相遇</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
+  <header class="site-header">
     <nav aria-label="主導覽">
-      <a href="#首頁">巡迴現場</a>
+      <a class="brand" href="#首頁" aria-label="Silverhawk 回到首頁">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>SILVERHAWK</span>
+      </a>
       <ul>
-        <li><a href="#巡演資訊">巡演資訊</a></li>
-        <li><a href="#演出場次">演出場次</a></li>
-        <li><a href="#聯絡我們">聯絡我們</a></li>
+        <li><a href="#故事">樂團故事</a></li>
+        <li><a href="#團員">團員介紹</a></li>
+        <li><a href="#巡演">巡演場次</a></li>
+        <li><a href="#新曲">新曲試聽</a></li>
       </ul>
+      <a class="nav-cta" href="#巡演">2026 巡演 <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
 
   <main>
-    <section id="首頁" aria-labelledby="主標題">
-      <p>2026 巡迴演出</p>
-      <h1 id="主標題">讓音樂，帶我們相遇</h1>
-      <p>準備好一起唱到最後一首歌了嗎？巡演即將啟程。</p>
-      <a href="#演出場次">查看演出場次</a>
+    <section class="hero" id="首頁" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow">SILVERHAWK · 2026 LIVE TOUR</p>
+        <h1 id="hero-title">讓音樂，<br>帶我們相遇。</h1>
+        <p class="hero-copy">一段旋律、一場現場，還有每個一起唱到最後的人。</p>
+        <a class="button button-light" href="#新曲">聽聽我們的新歌 <span aria-hidden="true">↓</span></a>
+        <p class="hero-note">新專輯即將發行 · 台灣巡演 11 月啟程</p>
+      </div>
+      <a class="scroll-cue" href="#故事" aria-label="向下探索樂團故事"><span></span>向下探索</a>
     </section>
 
-    <section id="巡演資訊" aria-labelledby="倒數標題">
-      <h2 id="倒數標題">巡演倒數</h2>
-      <p id="倒數" aria-live="polite">演出即將開始，敬請期待！</p>
+    <section class="story section-wrap" id="故事" aria-labelledby="story-title">
+      <div class="section-heading">
+        <p class="eyebrow">A BAND, A THOUSAND STORIES</p>
+        <h2 id="story-title">從一間練團室，<br>唱進每一個夜晚。</h2>
+      </div>
+      <div class="story-grid">
+        <figure class="story-image">
+          <img src="images/story.jpg" alt="Silverhawk 在練團室裡一起演奏" width="1360" height="768" loading="lazy" decoding="async">
+          <figcaption>那些最初的聲音，至今仍在路上。</figcaption>
+        </figure>
+        <div class="story-copy">
+          <p class="eyebrow">OUR STORY</p>
+          <p>Silverhawk 從朋友間的一次即興合奏開始。四個人帶著各自的節奏，在失真吉他與真誠歌聲裡，找到共同的方向。</p>
+          <p>我們把旅途、遺憾與微小的希望寫進歌裡。每一次登台，都是把這些故事交到你手上。</p>
+          <span class="story-signature">四個人，一個聲音。<span aria-hidden="true">✳</span></span>
+        </div>
+      </div>
     </section>
 
-    <section id="演出場次" aria-labelledby="場次標題">
-      <h2 id="場次標題">巡演場次</h2>
-      <div class="card">
-        <h3>台北場</h3>
-        <p><time datetime="2026-11-07">2026 年 11 月 7 日</time></p>
-        <p>台北流行音樂中心</p>
-        <a href="#聯絡我們">了解購票資訊</a>
+    <section class="members section-wrap" id="團員" aria-labelledby="members-title">
+      <div class="section-heading section-heading-centered">
+        <p class="eyebrow">MEET THE BAND</p>
+        <h2 id="members-title">四種聲音，<br class="mobile-break">同一個方向。</h2>
+        <p>台上是樂團，台下是一起走了很久的朋友。</p>
       </div>
-      <div class="card">
-        <h3>台中場</h3>
-        <p><time datetime="2026-11-14">2026 年 11 月 14 日</time></p>
-        <p>台中 Legacy</p>
-        <a href="#聯絡我們">了解購票資訊</a>
+      <figure class="members-photo">
+        <img src="images/intro.jpg" alt="Silverhawk 主唱、吉他手、貝斯手與鼓手的團員合照" width="1360" height="768" loading="lazy" decoding="async">
+      </figure>
+      <div class="member-list">
+        <article class="member">
+          <span class="member-number">01 / VOICE</span>
+          <h3>阿哲 <span>主唱</span></h3>
+          <p>把沒說出口的心事，唱成每個人的合唱。</p>
+        </article>
+        <article class="member">
+          <span class="member-number">02 / GUITAR</span>
+          <h3>小宇 <span>吉他</span></h3>
+          <p>用一道道音牆，描出歌曲裡的遠方。</p>
+        </article>
+        <article class="member">
+          <span class="member-number">03 / BASS</span>
+          <h3>安妮 <span>貝斯</span></h3>
+          <p>穩穩地守住節奏，也讓低音開始呼吸。</p>
+        </article>
+        <article class="member">
+          <span class="member-number">04 / DRUMS</span>
+          <h3>阿凱 <span>鼓手</span></h3>
+          <p>每一次落下的鼓點，都是下一段旅程的起點。</p>
+        </article>
       </div>
-      <div class="card">
-        <h3>高雄場</h3>
-        <p><time datetime="2026-11-21">2026 年 11 月 21 日</time></p>
-        <p>高雄流行音樂中心</p>
-        <a href="#聯絡我們">了解購票資訊</a>
+    </section>
+
+    <section class="tour section-wrap" id="巡演" aria-labelledby="tour-title">
+      <div class="tour-heading">
+        <div class="section-heading">
+          <p class="eyebrow">SEE YOU OUT THERE</p>
+          <h2 id="tour-title">下一站，<br>和你一起大聲唱。</h2>
+        </div>
+        <div class="countdown-wrap">
+          <span class="countdown-label">台北首場倒數</span>
+          <p id="倒數" aria-live="polite">演出即將開始，敬請期待！</p>
+        </div>
       </div>
-      <div class="card">
-        <h3>台南場</h3>
-        <p><time datetime="2026-11-28">2026 年 11 月 28 日</time></p>
-        <p>台南文化中心</p>
-        <a href="#聯絡我們">了解購票資訊</a>
+      <div class="tour-list">
+        <article class="tour-stop">
+          <time datetime="2026-11-07"><span>07</span> NOV <small>2026</small></time>
+          <div><h3>台北</h3><p>台北流行音樂中心 · 表演廳</p></div>
+          <p class="tour-time">19:30 開演</p>
+          <span class="tour-arrow" aria-hidden="true">↗</span>
+        </article>
+        <article class="tour-stop">
+          <time datetime="2026-11-14"><span>14</span> NOV <small>2026</small></time>
+          <div><h3>台中</h3><p>Legacy Taichung</p></div>
+          <p class="tour-time">19:30 開演</p>
+          <span class="tour-arrow" aria-hidden="true">↗</span>
+        </article>
+        <article class="tour-stop">
+          <time datetime="2026-11-21"><span>21</span> NOV <small>2026</small></time>
+          <div><h3>高雄</h3><p>高雄流行音樂中心 · LIVE WAREHOUSE</p></div>
+          <p class="tour-time">19:30 開演</p>
+          <span class="tour-arrow" aria-hidden="true">↗</span>
+        </article>
+        <article class="tour-stop">
+          <time datetime="2026-11-28"><span>28</span> NOV <small>2026</small></time>
+          <div><h3>台南</h3><p>台南文化中心 · 原生劇場</p></div>
+          <p class="tour-time">19:30 開演</p>
+          <span class="tour-arrow" aria-hidden="true">↗</span>
+        </article>
       </div>
+      <p class="tour-footnote">場次資訊以主辦單位公告為準，期待現場見。</p>
+    </section>
+
+    <section class="new-track section-wrap" id="新曲" aria-labelledby="track-title">
+      <div class="track-intro">
+        <p class="eyebrow">A FIRST LISTEN · NEW SINGLE</p>
+        <h2 id="track-title">《A Beautiful Theft》</h2>
+        <p>有些相遇，悄悄偷走了平凡的一天。戴上耳機，聽聽 Silverhawk 的全新現場影像。</p>
+        <span class="track-meta">SILVERHAWK <span aria-hidden="true">·</span> 2026</span>
+      </div>
+      <div class="video-frame">
+        <video controls preload="metadata" playsinline poster="images/bg.jpg" aria-label="播放 Silverhawk 新曲 A Beautiful Theft">
+          <source src="videos/A_Beautiful_Theft.mp4" type="video/mp4">
+          您的瀏覽器不支援影片播放，請改用其他瀏覽器。
+        </video>
+      </div>
+      <p class="player-hint"><span aria-hidden="true">▶</span> 按下播放鍵即可試聽；可使用播放器調整音量與播放進度。</p>
     </section>
   </main>
 
-  <footer id="聯絡我們">
-    <p>巡迴現場｜期待與你相見</p>
-    <p>&copy; 2026 巡迴現場. 保留所有權利。</p>
+  <footer>
+    <a class="brand footer-brand" href="#首頁"><span class="brand-mark" aria-hidden="true">S</span><span>SILVERHAWK</span></a>
+    <p>讓音樂，帶我們相遇。</p>
+    <small>&copy; 2026 Silverhawk. Made for the nights we share.</small>
   </footer>
 </body>
 </html>
